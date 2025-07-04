@@ -1,2 +1,2 @@
-# SCT_WebDev_01
+# SCT_WD_01
 "Task 1- Responsive Landing Page
