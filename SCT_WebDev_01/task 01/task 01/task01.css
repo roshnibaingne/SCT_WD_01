@@ -1,0 +1,185 @@
+/* Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #fdfdfd;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #0d0d0d;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+}
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: #00ff88;
+}
+.nav-links {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.nav-links a:hover {
+  color: #00ff88;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: linear-gradient(to right, #00ff88, #0077ff);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 70px;
+  text-align: center;
+}
+.hero-content {
+  max-width: 600px;
+}
+.hero h1 {
+  font-size: 52px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.cta-btn {
+  display: inline-block;
+  background: white;
+  color: #0077ff;
+  padding: 12px 30px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+.cta-btn:hover {
+  background: #00ff88;
+  color: #000;
+}
+
+/* Sections */
+.section {
+  padding: 80px 40px;
+  text-align: center;
+}
+.section-title {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #0077ff;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  width: 280px;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-8px);
+}
+
+/* Trainer Cards */
+.trainer-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+/* Pricing */
+.price-card ul {
+  list-style: none;
+  margin: 20px 0;
+  padding: 0;
+}
+.price-card ul li {
+  padding: 5px 0;
+}
+.price-card .price {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.highlight {
+  border: 2px solid #00ff88;
+}
+
+/* Contact */
+.contact-form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+.contact-form button {
+  background: #00ff88;
+  border: none;
+  padding: 12px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.contact-form button:hover {
+  background: #0077ff;
+  color: #fff;
+}
+
+/* Footer */
+.footer {
+  background: #0d0d0d;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .hero h1 {
+    font-size: 36px;
+  }
+  .card {
+    width: 100%;
+  }
+}
